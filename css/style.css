@@ -1,0 +1,96 @@
+*, *:before, *:after {
+  box-sizing: border-box;
+}
+
+.container {
+  margin: none;
+}
+
+@media only screen and (min-width: 600px) {
+  .container {
+    margin: 0% 10% 0% 10%;
+  }
+}
+
+body {
+  background-color: #dadada;
+  font-size: 10px;
+  text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.header {
+  font-variant: small-caps;
+  font-size: 2em;
+  letter-spacing: .2em;
+  padding-top: 2em;
+  padding-bottom: 2em;
+  text-align: center;
+}
+
+div.preview {
+  height: 40em;
+  width: 100%;
+  font-family: "Times New Roman", Times, serif;
+  overflow: hidden;
+  /*float: left;*/
+}
+
+@media only screen and (min-width: 600px){
+  div.preview {
+    display: inline-block;
+    position: relative;
+    height: 30em;
+    width: 39%;
+    overflow: hidden;
+  }
+  .baku, .madrid {
+    padding-right: 7.5px;
+  }
+  .london, .rome {
+    padding-left: 7.5px;
+  }
+}
+
+@media only screen and (min-width: 1000px){
+  div.preview {
+    display: inline-block;
+    height: 250px;
+    width: 19%;
+    overflow: hidden;
+    padding: 0% .5% 0% .5%;
+  }
+}
+
+div.preview h1 {
+  position: relative;
+  float: left;
+  font-size: 3em;
+  top: 60px;
+  padding-left: 30px;
+}
+
+/* @media only screen and (min-width: 600px) {
+  div.preview h1 {
+    top:
+  }
+} */
+
+div.preview img {
+  max-width: 600px;
+  object-fit: contain;
+  vertical-align: middle;
+  display: inline-block;
+  margin-left: auto;
+  margin-right: auto;
+  overflow: hidden;
+}
+
+@media only screen and (min-width: 600px){
+  div.preview img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    overflow: hidden;
+  }
+}
